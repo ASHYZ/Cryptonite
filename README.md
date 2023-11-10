@@ -20,9 +20,13 @@ https://caas.mars.picoctf.net/cowsay/flag ;cat falg.txt
  
  They provided us with a non-readable file which I thought of converting into text through different converters( as I thought that file to be in base64, utf ) but nothing worked out so I started reading it line by line and actually the flag was already given in the file provided.
 
+ <img width="456" alt="Screenshot 2023-11-10 103523" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/147d913a-0711-4d0f-ae5e-a17fc7d41d43">
+ 
+
  iii)	Play Nice (Cryptography)
       
-       I tried to implement Playfair cipher on the alphabetic 5X5 matrix (excluding J), and obtained the key: - "PLAIFYREBCDGHKMNOSTUVWXYZ" 
+  I tried to implement Playfair cipher on the alphabetic 5X5 matrix (excluding J), and obtained the key: - "PLAIFYREBCDGHKMNOSTUVWXYZ"  
+  
 Inputting this key and the text provided to decrypt in the following code: -
 ~~~
 SQUARE_SIZE = 5

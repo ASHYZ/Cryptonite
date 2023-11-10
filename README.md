@@ -25,7 +25,9 @@ https://caas.mars.picoctf.net/cowsay/flag ;cat falg.txt
 
  iii)	Play Nice (Cryptography)
       
-  I tried to implement Playfair cipher on the alphabetic 5X5 matrix (excluding J), and obtained the key: - "PLAIFYREBCDGHKMNOSTUVWXYZ"  
+  I tried to implement Playfair cipher on the alphabetic 5X5 matrix (excluding J), and obtained the key: - "PLAIFYREBCDGHKMNOSTUVWXYZ" 
+  
+  <img width="499" alt="Screenshot 2023-11-10 181201" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/bfd22817-ffa9-490a-a28b-c954f049276e">
   
 Inputting this key and the text provided to decrypt in the following code: -
 ~~~

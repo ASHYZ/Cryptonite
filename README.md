@@ -69,6 +69,8 @@ print(f"Decrypted Text: {decrypted_text}")
 which gave me decrypted message: - q60nqch7bmd4x13k2nrexf9zi58usvwwlueaf
 I tried running the playfair.py code in WSL but still didn’t get any output.
 
+<img width="662" alt="Screenshot 2023-11-10 181140" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/4147fbaf-5c36-4156-8be0-3d379fe61a33">
+
 iv)	Filtered Shellcode (Binary)
 My approach for this question was to look at the every function given in that ‘fun’ file. I learned that to analyze for its calling convention and register usage, you would need to disassemble a specific function or code segment within this binary using a disassembler tool such as objdump or gdb (GNU Debugger).
 I used  “objdump -d -M intel -j .text binary_file” which led me to the following: 

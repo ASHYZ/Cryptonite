@@ -165,7 +165,7 @@ for x in range(10000):
 
 vii) File Types (FORENSICS)
 
- The file which was provided was a shell archive file so to extract the files from this file I copied everything from to  '#!/bin/sh' to the last in a new file and saved it as extracted.sh file .
+ The file which was provided was a shell archive file so to extract the files from this file I copied everything from   '#!/bin/sh' to the last in a new file and saved it as extracted.sh file .
 
  Then opened the new flag file which gave me:-
  
@@ -173,7 +173,7 @@ vii) File Types (FORENSICS)
 
  Then I extracted the file in extracted.flag using the command 'dd if=flag of=extracted_flag bs=1 skip=68'.
 
- The extracted file gave me this which I couldn't encode it further.
+ The extracted file gave me this which I couldn't encode further.
 
 <img width="955" alt="Screenshot 2023-11-15 200339" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/5e537fad-b681-4993-932f-d8139fc6ef59">
 
@@ -181,7 +181,8 @@ vii) File Types (FORENSICS)
  
  viii)	Pcap Poisoning (FORENSICS)
  
- They provided us with a non-readable file which I thought of converting into text through different converters( as I thought that file to be in base64, utf ) but nothing worked out so I started reading it line by line and apparently the flag was already given in the file provided.
+ They provided us with a non-readable file which I thought of converting into text through different converters( as I thought that file to be in base64, utf or somerhing similar ) but nothing worked out so I started reading it line by line and apparently the flag was already given in the file provided.
+
 
  <img width="456" alt="Screenshot 2023-11-10 103523" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/147d913a-0711-4d0f-ae5e-a17fc7d41d43">
 

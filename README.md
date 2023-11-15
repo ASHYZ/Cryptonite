@@ -47,9 +47,11 @@ iv) Hijacking ( BINARY )
 
 <img width="731" alt="Screenshot 2023-11-15 181914" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/aa237d41-f26d-4405-a783-141bcb611bbd">
 
+
  I used "ls -al" to list all the items inside the directory
 
  According to the challenge it should have been a python file so I tried to open and run  .server.py
+
 
  <img width="608" alt="Screenshot 2023-11-15 181854" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/f2597edc-69a4-4e51-b6f9-091d71c97604">
 
@@ -67,6 +69,7 @@ iv) Hijacking ( BINARY )
   I tried to implement Playfair cipher on the alphabetic 5X5 matrix (excluding J), and obtained the key: - "PLAIFYREBCDGHKMNOSTUVWXYZ" 
   
   <img width="499" alt="Screenshot 2023-11-10 181201" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/bfd22817-ffa9-490a-a28b-c954f049276e">
+
   
 Inputting this key and the text provided to decrypt in the following code: -
 ~~~
@@ -126,7 +129,7 @@ I got a non-readable text which I tried converting into text but couldn't.
 
 So I changed my approach and tried doing it using cube root attack. since the value of e is very small (3) , there will be not too much power to calculate the cube root of the above expression.
 
-C = P**e % N, now for any integer x we can say:)
+C = P**e % N, now for any integer x we can say
 
 P**e = C + N*x => P = (C + N*x)**1/e ,
 

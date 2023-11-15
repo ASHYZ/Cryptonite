@@ -26,6 +26,7 @@ ii) Most Cookies ( WEB EXPLOITATION)
 
  
 iii)	Filtered Shellcode (BINARY)
+
 My approach for this question was to look at the every function given in that ‘fun’ file. I learned that to analyze for its calling convention and register usage, you would need to disassemble a specific function or code segment within this binary using a disassembler tool such as objdump or gdb (GNU Debugger).
 I used  “objdump -d -M intel -j .text binary_file” which led me to the following: 
 

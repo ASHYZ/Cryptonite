@@ -27,6 +27,7 @@ ii) Most Cookies ( WEB EXPLOITATION)
  
 iii)	Filtered Shellcode (BINARY)
 
+
 My approach for this question was to look at the every function given in that ‘fun’ file. I learned that to analyze for its calling convention and register usage, you would need to disassemble a specific function or code segment within this binary using a disassembler tool such as objdump or gdb (GNU Debugger).
 I used  “objdump -d -M intel -j .text binary_file” which led me to the following: 
 
@@ -46,14 +47,14 @@ iv) Hijacking ( BINARY )
 
 <img width="731" alt="Screenshot 2023-11-15 181914" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/aa237d41-f26d-4405-a783-141bcb611bbd">
 
- I used ls -al to list all the items inside the directory
+ I used "ls -al" to list all the items inside the directory
 
  According to the challenge it should have been a python file so I tried to open and run  .server.py
 
  <img width="608" alt="Screenshot 2023-11-15 181854" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/f2597edc-69a4-4e51-b6f9-091d71c97604">
 
 
- Then I tried running sudo -l . It was written that we can run the /usr/bin/vi coomand on challenge so I tried to search upon it and got sudo vi -c ‘:!/bin/sh’ /dev/null commnand which was helpful.
+ Then I tried running "sudo -l" . It was written that we can run the " /usr/bin/vi " command on challenge so I tried to search upon it and got " sudo vi -c ‘:!/bin/sh’ /dev/null " command which was helpful.
 
  then the I went into the root directory and got the flag.
 
@@ -132,6 +133,8 @@ P**e = C + N*x => P = (C + N*x)**1/e ,
 which means we can actually brute force the value of x. we can take it from range 1,10000 and then calculate P for each x, and check whether it contains ‘pico’ string in it. since the value containing ‘pico’ in it is our flag.
 
 I tried the code given below but for some reasons I am not able to run it in my wsl.
+
+
  ~~~
 from Crypto.Util.number import long_to_bytes
 import gmpy2
@@ -156,6 +159,7 @@ for x in range(10000):
 
 ~~~
 
+
 vii) File Types (FORENSICS)
 
  The file which was provided was a shell archive file so to extract the files from this file I copied everything from to  '#!/bin/sh' to the last in a new file and saved it as extracted.sh file .
@@ -170,16 +174,20 @@ vii) File Types (FORENSICS)
 
 <img width="955" alt="Screenshot 2023-11-15 200339" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/5e537fad-b681-4993-932f-d8139fc6ef59">
 
+
  
  viii)	Pcap Poisoning (FORENSICS)
  
  They provided us with a non-readable file which I thought of converting into text through different converters( as I thought that file to be in base64, utf ) but nothing worked out so I started reading it line by line and apparently the flag was already given in the file provided.
 
  <img width="456" alt="Screenshot 2023-11-10 103523" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/147d913a-0711-4d0f-ae5e-a17fc7d41d43">
+
  
 
   ix) Reverse (REVERSE ENGINEERING)
   The answer was straight up given in the provided pdf.
+
+
 
   x) ASCII FTW (REVERSE ENGINEERING)
   I converted the given file into readable text using suitable converter. I saw the alternate characters were written in sequence as a flag

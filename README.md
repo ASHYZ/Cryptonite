@@ -43,15 +43,21 @@ iv) Hijacking ( BINARY )
  I used the following command to SSH into the server
  ssh -p 54961 picoctf@saturn.picoctf.net 
 
+<img width="731" alt="Screenshot 2023-11-15 181914" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/aa237d41-f26d-4405-a783-141bcb611bbd">
+
  I used ls -al to list all the items inside the directory
 
  According to the challenge it should have been a python file so I tried to open and run  .server.py
+
+ <img width="608" alt="Screenshot 2023-11-15 181854" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/f2597edc-69a4-4e51-b6f9-091d71c97604">
+
 
  Then I tried running sudo -l . It was written that we can run the /usr/bin/vi coomand on challenge so I tried to search upon it and got sudo vi -c ‘:!/bin/sh’ /dev/null commnand which was helpful.
 
  then the I went into the root directory and got the flag.
 
 
+<img width="849" alt="Screenshot 2023-11-15 181838" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/d203f52c-7ae9-4f7e-9b67-c5b46be249eb">
 
 
  v)	Play Nice (CRYPTOGRAPHY)
@@ -113,6 +119,7 @@ I tried to learn about RSA and learnt about the formula  C ≡ P e (mod N) . I t
 
 I got a non-readable text which I tried converting into text but couldn't. 
 
+<img width="649" alt="Screenshot 2023-11-15 151255" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/583769d7-257d-4d6a-b9ff-97d8e0e09a2f">
 
 
 So I changed my approach and tried doing it using cube root attack. since the value of e is very small (3) , there will be not too much power to calculate the cube root of the above expression.
@@ -154,12 +161,13 @@ vii) File Types (FORENSICS)
 
  Then opened the new flag file which gave me:-
  
-
+<img width="952" alt="Screenshot 2023-11-15 200417" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/a51b9041-75c7-4cca-b31c-fec9141a093d">
 
  Then I extracted the file in extracted.flag using the command 'dd if=flag of=extracted_flag bs=1 skip=68'.
 
- The extracted file gave me this which I couldn't encode further.
+ The extracted file gave me this which I couldn't encode it further.
 
+<img width="955" alt="Screenshot 2023-11-15 200339" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/5e537fad-b681-4993-932f-d8139fc6ef59">
 
  
  viii)	Pcap Poisoning (FORENSICS)
@@ -169,14 +177,13 @@ vii) File Types (FORENSICS)
  <img width="456" alt="Screenshot 2023-11-10 103523" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/147d913a-0711-4d0f-ae5e-a17fc7d41d43">
  
 
- 
-
   ix) Reverse (REVERSE ENGINEERING)
   The answer was straight up given in the provided pdf.
 
   x) ASCII FTW (REVERSE ENGINEERING)
   I converted the given file into readable text using suitable converter. I saw the alternate characters were written in sequence as a flag
 
+<img width="288" alt="Screenshot 2023-11-15 145109" src="https://github.com/ASHYZ/Cryptonite/assets/123001554/d3791173-75b9-4e96-b188-bde0a075b06f">
   
 
   
